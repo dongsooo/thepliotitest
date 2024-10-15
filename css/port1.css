@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+video {
+  vertical-align: top;
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+.headerWrap {
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.blankBox {
+  display: flex;
+  flex-grow: 2;
+}
+
+.logoBox {
+  width: 80px;
+  height: 80px;
+  margin-right: 1em;
+}
+
+.logoBox > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.logoBox img {
+  width: 100%;
+}
+
+.contentsWrap {
+  max-width: 1080px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5em;
+  padding: 0 1em;
+}
+
+.contentsLeftBox {
+  margin-right: 2em;
+  width: 50%;
+}
+
+.imgContentsBox {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 50%;
+}
+
+.swiper-slide::after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: rgb(226, 226, 226);
+  font-size: 16px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(226, 226, 226) !important;
+}
+
+.contentsRightBox {
+  width: 50%;
+  padding-left: 2em;
+  border-left: 1px solid rgb(226, 226, 226);
+}
+
+.textContentsBox {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.textTopBox {
+  width: 100%;
+  height: 80px;
+}
+
+.textTopBox > p {
+  color: #333333;
+}
+
+.textTopBox > p:first-child {
+  font-weight: lighter;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.textTopBox > p:last-child {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.textBottomBox {
+  width: 100%;
+  height: 406px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.BottomTextBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+.BottomTextBox > p {
+  color: #333333;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.BottomTextBox_left {
+  width: 100px;
+  padding-top: 1.5em;
+}
+
+.BottomTextBox_left > p {
+  color: #333333;
+  font-weight: lighter;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+.BottomTextBox_left > p:first-child {
+  color: #232323;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.BottomTextBox_right {
+  padding-top: 1.5em;
+  width: 100px;
+}
+
+.BottomTextBox_right > p {
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+.BottomTextBox_right > p:first-child {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.kakaoBtn {
+  width: 200px;
+  height: 50px;
+  border: 1px solid rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.detailWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  position: relative;
+}
+
+.detailImgBox {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.deImgBox {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  margin-top: 1em;
+}
+
+.show {
+  display: block;
+}
+
+.deImgBox img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.moreViewBtn {
+  max-width: 1080px;
+  height: 50px;
+  border: 1px solid rgb(226, 226, 226);
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.goToUpBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(226, 226, 226);
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  /* 모바일 스타일 */
+  .contentsWrap {
+    flex-direction: column;
+    margin-top: 2em;
+    max-width: 767px;
+  }
+
+  .contentsLeftBox {
+    width: 100%;
+  }
+
+  .contentsRightBox {
+    width: 100%;
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .textTopBox {
+    margin-top: 1em;
+    border-bottom: 1px solid rgb(226, 226, 226);
+  }
+
+  .BottomTextBox {
+    border-top: 0;
+    height: 200px;
+  }
+
+  .textBottomBox {
+    height: 200px;
+  }
+
+  .kakaoBtn {
+    width: 100%;
+  }
+
+  .goToUpBtn {
+    right: 15px;
+  }
+}
